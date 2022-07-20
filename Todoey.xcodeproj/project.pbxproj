@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1DEE7928841B3500A49456 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE1DEE7728841B3500A49456 /* DataModel.xcdatamodeld */; };
 		BE6E7C02287D8FBD00091663 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6E7C01287D8FBD00091663 /* TableView.swift */; };
 		BE6E7C04287D91C400091663 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6E7C03287D91C400091663 /* Consts.swift */; };
+		BEA10FE32885A68D00ABBDB7 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA10FE22885A68D00ABBDB7 /* CategoryTVC.swift */; };
 		EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4F9239524DB00FB933B /* AppDelegate.swift */; };
 		EB2BE501239524DB00FB933B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE4FF239524DB00FB933B /* Main.storyboard */; };
 		EB2BE503239524DC00FB933B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE502239524DC00FB933B /* Assets.xcassets */; };
@@ -16,8 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1DEE7828841B3500A49456 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BE6E7C01287D8FBD00091663 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		BE6E7C03287D91C400091663 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		BEA10FE22885A68D00ABBDB7 /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
 		EB2BE4F6239524DB00FB933B /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2BE4F9239524DB00FB933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2BE500239524DB00FB933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,9 +53,29 @@
 		BE6E7C00287D8ED200091663 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEA10FE22885A68D00ABBDB7 /* CategoryTVC.swift */,
 				BE6E7C01287D8FBD00091663 /* TableView.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BEDF4763287EDEB0003CDA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DEE7728841B3500A49456 /* DataModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEDF4766287EDFCC003CDA65 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BE507239524DC00FB933B /* Info.plist */,
+				EB2BE502239524DC00FB933B /* Assets.xcassets */,
+				BE6E7C03287D91C400091663 /* Consts.swift */,
+				EB2BE4F9239524DB00FB933B /* AppDelegate.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		EB2BE4ED239524DB00FB933B = {
@@ -73,12 +97,10 @@
 		EB2BE4F8239524DB00FB933B /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
-				EB2BE4F9239524DB00FB933B /* AppDelegate.swift */,
-				BE6E7C03287D91C400091663 /* Consts.swift */,
-				BE6E7C00287D8ED200091663 /* Controllers */,
+				BEDF4766287EDFCC003CDA65 /* Supporting files */,
+				BEDF4763287EDEB0003CDA65 /* Model */,
 				BE6E7BFF287D8EB600091663 /* View */,
-				EB2BE502239524DC00FB933B /* Assets.xcassets */,
-				EB2BE507239524DC00FB933B /* Info.plist */,
+				BE6E7C00287D8ED200091663 /* Controllers */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -99,6 +121,8 @@
 			dependencies = (
 			);
 			name = Todoey;
+			packageProductDependencies = (
+			);
 			productName = Todoey;
 			productReference = EB2BE4F6239524DB00FB933B /* Todoey.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +151,8 @@
 				Base,
 			);
 			mainGroup = EB2BE4ED239524DB00FB933B;
+			packageReferences = (
+			);
 			productRefGroup = EB2BE4F7239524DB00FB933B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +182,8 @@
 			files = (
 				BE6E7C02287D8FBD00091663 /* TableView.swift in Sources */,
 				BE6E7C04287D91C400091663 /* Consts.swift in Sources */,
+				BEA10FE32885A68D00ABBDB7 /* CategoryTVC.swift in Sources */,
+				BE1DEE7928841B3500A49456 /* DataModel.xcdatamodeld in Sources */,
 				EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,12 +331,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 9FL5FRNFVL;
+				INFOPLIST_FILE = "$(SRCROOT)/Todoey/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdox.todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -321,12 +352,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 9FL5FRNFVL;
+				INFOPLIST_FILE = "$(SRCROOT)/Todoey/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdox.todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -356,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE1DEE7728841B3500A49456 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE1DEE7828841B3500A49456 /* Model.xcdatamodel */,
+			);
+			currentVersion = BE1DEE7828841B3500A49456 /* Model.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB2BE4EE239524DB00FB933B /* Project object */;
 }

@@ -11,4 +11,6 @@ import Foundation
 struct K {
     static let cellId = "ToDoCell"
     static let userDefaults = "ToDoListArray"
+    static let catCellIf = "CategoryCell"
+    static let segueID = "GoToItems"
 }
